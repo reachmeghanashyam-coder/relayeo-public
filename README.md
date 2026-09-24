@@ -1,4 +1,4 @@
-# Relayeo Protocol — Sovereign Answer Engine Optimization (AEO)
+# Relayeo — Sovereign Answer Engine Optimization (AEO)
 
 [![AEO Protocol v1.0.0](https://img.shields.io/badge/AEO_Protocol-v1.0.0-0284c7.svg)](https://www.relayeo.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)
