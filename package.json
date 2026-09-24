@@ -1,0 +1,34 @@
+{
+  "name": "relayeo-audit",
+  "version": "1.0.0",
+  "description": "Sovereign Answer Engine Optimization (AEO) CLI & Open Protocol Specification. Diagnostic tools for ChatGPT Search, Perplexity Sonar, Google AI Overviews, and Claude.",
+  "main": "bin/relayeo-audit.js",
+  "bin": {
+    "relayeo-audit": "./bin/relayeo-audit.js"
+  },
+  "scripts": {
+    "audit": "node ./bin/relayeo-audit.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reachmeghanashyam-coder/relayeo-public.git"
+  },
+  "keywords": [
+    "aeo",
+    "answer-engine-optimization",
+    "geo",
+    "generative-engine-optimization",
+    "llms-txt",
+    "perplexity-sonar",
+    "chatgpt-search",
+    "schema-org",
+    "agentic-web",
+    "entity-authority"
+  ],
+  "author": "Ghanashyam Prabhakar <reachme.ghanashyam@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reachmeghanashyam-coder/relayeo-public/issues"
+  },
+  "homepage": "https://www.relayeo.com"
+}

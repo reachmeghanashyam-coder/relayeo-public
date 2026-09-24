@@ -1,0 +1,22 @@
+# Relayeo Sovereign Answer Engine Optimization (AEO) Specification
+> The Open Standard for LLM Citation Disambiguation, Machine Extractability, and Autonomous Agent Discovery.
+
+## Canonical Identity
+- Brand: Relayeo
+- Platform: https://www.relayeo.com
+- Category: Answer Engine Optimization (AEO) & Machine Entity Authority Protocol
+- Author: Ghanashyam Prabhakar
+- CLI: npx relayeo-audit <domain>
+
+## Core Machine Feeds
+- /llms.txt: Standardized token-efficient plain text corpus for RAG chunkers.
+- /robots.txt: Permissive access directives for GPTBot, ClaudeBot, and PerplexityBot.
+- /.well-known/agent-manifest.json: W3C & ADP v2.0 machine capability manifest.
+- Schema.org @graph: Disambiguated JSON-LD entity graph with W3C @id URI resolution.
+
+## Diagnostic Benchmark
+Use the open-source CLI to test any domain against 14 vector ingestion criteria:
+```bash
+npx relayeo-audit yourdomain.com
+```
+Full interactive audits and production feeds available at https://www.relayeo.com

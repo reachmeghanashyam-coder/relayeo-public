@@ -1,0 +1,24 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://yourbrand.com/#organization",
+      "name": "YourBrand",
+      "url": "https://yourbrand.com",
+      "logo": "https://yourbrand.com/logo.png"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://yourbrand.com/#software",
+      "name": "YourBrand Cloud",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "29.00",
+        "priceCurrency": "USD"
+      }
+    }
+  ]
+}
