@@ -102,6 +102,37 @@ When you run `relayeo-audit`, your domain is evaluated against 14 mission-critic
 
 ---
 
+---
+
+## 🛍️ Shopify Multi-Variant AI Shopping Schema Fix
+
+Autonomous AI shopping agents (ChatGPT Search, Perplexity Sonar, Google AI Overviews) evaluate product availability directly from static server-rendered Schema.org JSON-LD. Default Shopify themes only output single-variant `offers`, causing **68.2% of multi-variant products** to be dropped during AI shopping missions.
+
+### Open-Source Liquid Fix:
+Drop [`shopify/snippets/relayeo-offers.liquid`](shopify/snippets/relayeo-offers.liquid) into your theme:
+
+```liquid
+"offers": [
+  {%- for variant in product.variants -%}
+  {
+    "@type": "Offer",
+    "name": {{ variant.title | json }},
+    "sku": {{ variant.sku | json }},
+    "price": {{ variant.price | divided_by: 100.00 | json }},
+    "priceCurrency": {{ cart.currency.iso_code | json }},
+    "availability": "{% if variant.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+    "url": "{{ shop.url }}{{ variant.url }}",
+    "itemCondition": "https://schema.org/NewCondition"
+  }{% unless forloop.last %},{% endunless %}
+  {%- endfor -%}
+]
+```
+
+* **Live Free Diagnostic**: Test how AI shopping agents parse your store at [relayeo.com/tools/shopify-extractor](https://www.relayeo.com/tools/shopify-extractor).
+* **Research Paper**: Read our full 1,284-store benchmark at [relayeo.com/research/shopify-agentic-holiday-season-variant-drop](https://www.relayeo.com/research/shopify-agentic-holiday-season-variant-drop).
+
+---
+
 ## 🌐 Full Automated Platform & Live Scanners
 
 To generate complete, copy-paste machine assets for your production domain, visit:
