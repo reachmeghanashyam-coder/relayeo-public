@@ -128,6 +128,7 @@ Drop [`shopify/snippets/relayeo-offers.liquid`](shopify/snippets/relayeo-offers.
 ]
 ```
 
+* **Dedicated Shopify Gateway**: Test live shopping missions and multi-variant resolution at [relayeo.com/shopify](https://www.relayeo.com/shopify).
 * **Live Free Diagnostic**: Test how AI shopping agents parse your store at [relayeo.com/tools/shopify-extractor](https://www.relayeo.com/tools/shopify-extractor).
 * **Research Paper**: Read our full 1,284-store benchmark at [relayeo.com/research/shopify-agentic-holiday-season-variant-drop](https://www.relayeo.com/research/shopify-agentic-holiday-season-variant-drop).
 
